@@ -1,0 +1,40 @@
+#include <kipr/botball.h>
+
+int main()
+{
+    
+    //Bot handler:			paigie mcentire 
+    //Bot coder:			victoria clanton
+    //Challenge manager:	sophia clanton
+    //Quality assurance:    natalie cannon
+    //bot build				v1 standard NO claw
+    //bot placement			left 15 on the line 
+    printf("mtp");
+    
+    clear_motor_position_counter (0);
+    clear_motor_position_counter (1);
+    mtp(1,400,5000L);  // straight to  circle 6
+    mtp(0,400,5000L);  // straight to circle 6
+    bmd(1);
+    msleep(1000);
+
+          
+    
+    clear_motor_position_counter (0);
+    clear_motor_position_counter (1); 
+    mtp(1,400,1500L);  // straight to  circle 6
+    mtp(0,400,1500L);  // straight to circle 6
+    bmd(1);
+    msleep(1000);
+
+    
+    
+    clear_motor_position_counter (0);
+    clear_motor_position_counter (1);
+    mtp(1,400,5000L);  // straight home
+    mtp(0,400,5000L);  // straight home
+    bmd(1);
+    msleep(1000); 
+    ao();
+    return 0;
+}
